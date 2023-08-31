@@ -1,0 +1,43 @@
+{{> header }}
+
+<h1 class="main-title">ReDoS</h1>
+<p class="subtitle">Why you should sanatize regex</p>
+
+
+{{> form
+  action="/validate-email"
+  title="Validate email"
+  subtitle="where the bad regex is on the server"
+  inputLabel="Email"
+  inputId="validEmail"
+  inputName="email"
+  inputPlaceholder="Enter the email to validate"
+  submitText="Validate"
+}}
+
+{{> divider }}
+
+{{> form
+  action="/search-for-email"
+  title="Search for an email"
+  subtitle="where you can send the bad regex"
+  inputLabel="Email"
+  inputId="searchEmail"
+  inputName="email"
+  inputPlaceholder="Enter the email you want to search for"
+  submitText="Search"
+}}
+
+
+{{!--     <form action="" method="POST"> --}}
+{{!--       <h2>Search for email in DB</h2> --}}
+{{!--       <label for="searchEmail">Email</label> --}}
+{{!--       <input type="text" placeholder="Enter an email to search for it" id="searchEmail" name="email" autofocus /> --}}
+{{!--       <input type="submit" value="Submit" /> --}}
+{{!--     </form> --}}
+
+{{!--   </body> --}}
+{{!-- </html> --}}
+
+
+{{> footer}}

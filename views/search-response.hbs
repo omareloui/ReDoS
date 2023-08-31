@@ -1,0 +1,14 @@
+{{> header }}
+
+<div class="search-response-wrapper">
+  <div class="search-response">
+    {{#if email}}
+        <span class="search-response__success">Found</span> email <span class="search-response__email">{{ email }}</span>.
+    {{else}}
+        <span class="search-response__failure">Didn't find</span> email!
+    {{/if}}
+  </div>
+</div>
+
+{{> footer }}
+
